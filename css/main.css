@@ -9,19 +9,20 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #777777;
-  padding: 20px;
+  color: #777;
+  padding: 10px;
+  background-color: #fff;
 }
 .header{
-  height: 45vh;
+  height: 90vh;
   background-image: linear-gradient(
-    to right,
-    rgba(240, 90, 40, 0.7),
-    rgba(236, 0, 140, 0.5)),
-  url(../img/header1.jpg);
+    to right bottom,
+    rgba(240, 143, 40, 0.5),
+    rgba(236, 94, 0, 0.5)),
+  url(../img/headerHotel.jpg);
+  -webkit-mask-image: -webkit-gradient(linear, left 75%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0 100%);
   position: relative;
 }
 
@@ -43,6 +44,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  text-align: center;
 }
 
 .heading-primary {
@@ -52,16 +54,17 @@ body {
   text-transform: uppercase;
   padding: 0 10% 0 10%;
   backface-visibility: hidden;
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
   white-space: normal;
   display: block;
-  font-size: 70px;
-  font-weight: 100;
-  letter-spacing: 25px;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 15px;
   line-height: 80px;
-  text-shadow: 0px 0px 100px #000000;
+  text-shadow: 0.5px 1px 15px rgba(0,0,0, 0.85);
   animation: moveToRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -73,7 +76,7 @@ body {
   font-weight: normal;
   letter-spacing: 20px;
   line-height: 20px;
-  text-shadow: 0px 0px 100px #000000;
+  text-shadow: 0.5px 1px 5px rgba(0,0,0, 0.85);
   animation: moveToLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -109,4 +112,46 @@ body {
     opacity: 1;
     transform: translate(0px);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 30px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .1s;
+  box-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn-white {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+}
+
+.btn::after{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.btn-white::after {
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
 }
