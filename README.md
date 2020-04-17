@@ -1,4 +1,4 @@
-# GrandBeachHotel
+# Hotel Page
 
 Learning project developed to practice frontend skills.
 
