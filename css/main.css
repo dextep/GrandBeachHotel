@@ -18,12 +18,12 @@ body {
   height: 98vh;
   background-image: linear-gradient(
     to right bottom,
-    rgba(232, 88, 11, 0.2),
+    rgba(226, 72, 0, 0.2),
     rgba(236, 212, 0, 0.2)),
   url(../img/hotelentrance.jpg);
-  /*-webkit-mask-image: -webkit-gradient(linear, left 75%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+  /*-webkit-mask-image: -webkit-gradient(linear, left 99%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   position: relative;
 }
 
@@ -61,7 +61,7 @@ body {
 .heading-primary-main {
   white-space: normal;
   display: block;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 400;
   letter-spacing: 15px;
   line-height: 80px;
