@@ -18,9 +18,9 @@ body {
   height: 98vh;
   background-image: linear-gradient(
     to right bottom,
-    rgba(240, 143, 40, 0.5),
-    rgba(236, 94, 0, 0.5)),
-  url(../img/headerHotel.jpg);
+    rgba(232, 88, 11, 0.2),
+    rgba(236, 212, 0, 0.2)),
+  url(../img/hotelentrance.jpg);
   /*-webkit-mask-image: -webkit-gradient(linear, left 75%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
   background-size: cover;
   background-position: center;
@@ -49,7 +49,7 @@ body {
 }
 
 .heading-primary {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Lato", sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -62,10 +62,10 @@ body {
   white-space: normal;
   display: block;
   font-size: 60px;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 15px;
   line-height: 80px;
-  text-shadow: 0.5px 1px 15px rgba(0,0,0, 0.85);
+  text-shadow: 0px 0px 30px rgb(0, 0, 0);
   animation: moveToRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -74,10 +74,10 @@ body {
 .heading-primary-sub {
   display: block;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 20px;
   line-height: 20px;
-  text-shadow: 0.5px 1px 5px rgba(0,0,0, 0.85);
+  text-shadow: 0px 0px 30px rgb(0, 0, 0);
   animation: moveToLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
