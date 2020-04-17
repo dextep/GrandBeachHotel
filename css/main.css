@@ -18,7 +18,7 @@ body {
   height: 98vh;
   background-image: linear-gradient(
     to right bottom,
-    rgba(226, 72, 0, 0.2),
+    rgba(224, 108, 7, 0.2),
     rgba(236, 212, 0, 0.2)),
   url(../img/hotelentrance.jpg);
   /*-webkit-mask-image: -webkit-gradient(linear, left 99%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
@@ -126,66 +126,13 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 8px 30px;
-  display: inline-block;
-  border-radius: 100px;
-  transition: all .2s;
-  box-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
-  position: relative;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.btn:active {
-  transform: translateY(-1px);
-}
-
-.btn-white {
-  background-color: rgba(255, 255, 255, 1);
-  color: #000000;
-}
-
-.btn::after{
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 200px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s;
-}
-
-.btn-white::after {
-  background-color: rgba(255, 255, 255, 1);
-  color: #000000;
-}
-
-.btn:hover::after {
-  transform: scale(1.5);
-  opacity: 0.0;
-}
-
-.btn-animated {
-  animation: moveInBottom .4s ease-out .45s;
-  animation-fill-mode: backwards;
-}
-
 .arrow span{
   position: absolute;
   top: 45vh;
   width: 30px;
   height: 30px;
   margin-left: -12px;
-  border-left: 2px solid #fff;
+  border-left: 2px solid #ffffff;
   border-bottom: 2px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
