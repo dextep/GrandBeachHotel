@@ -48,6 +48,18 @@ body {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   height: 140px;
+  animation: opacityInput;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes opacityInput {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .heading-primary {
