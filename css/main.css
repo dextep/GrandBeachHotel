@@ -48,9 +48,7 @@ body {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   height: 140px;
-  animation: opacityInput;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
+  animation: opacityInput 2s ease-out;
 }
 
 @keyframes opacityInput {
