@@ -76,22 +76,44 @@ body {
 .heading-primary-main {
   white-space: normal;
   display: block;
-  font-size: 70px;
-  font-weight: 400;
-  letter-spacing: 20px;
-  line-height: 80px;
   text-shadow: 0px 0px 30px rgb(0, 0, 0);
   animation: moveToRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 
+@media only screen and (min-width: 768px) {
+  .heading-primary-main {
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 20px;
+    font-weight: 400;
+  }
+  .heading-primary-sub {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-primary-main {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 13px;
+    font-weight: 800;
+  }
+  .heading-primary-sub {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    padding-top: 10px;
+  }
+}
+
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
   font-weight: 400;
-  letter-spacing: 20px;
-  line-height: 30px;
   text-shadow: 0px 0px 30px rgb(0, 0, 0);
   animation: moveToLeft;
   animation-duration: 1s;
