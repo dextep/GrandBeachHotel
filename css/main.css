@@ -46,9 +46,7 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
   height: 140px;
-  animation: opacityInput 2s ease-out;
 }
 
 @keyframes opacityInput {
@@ -65,12 +63,14 @@ body {
   font-family: "Lato", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 10% 0 10%;
+  padding: 20px 10% 20px 10%;
+  background-color: rgba(0, 0, 0, 0.3);
   backface-visibility: hidden;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+  animation: opacityInput 2s ease-out;
 }
 
 .heading-primary-main {
