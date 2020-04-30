@@ -1,0 +1,28 @@
+{
+  "name": "orientalhotel",
+  "version": "1.0.0",
+  "description": "Landing page for Oriental Hotel.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dextep/OrientalHotel.git"
+  },
+  "keywords": [
+    "hotel"
+  ],
+  "author": "Grzegorz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dextep/OrientalHotel/issues"
+  },
+  "homepage": "https://github.com/dextep/OrientalHotel#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
