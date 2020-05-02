@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 10px;
+  background-color: #fff;
+  overflow: hidden; }
+
+.header {
+  height: 98vh;
+  background-image: linear-gradient(to right bottom, rgba(224, 108, 7, 0.2), rgba(236, 212, 0, 0.2)), url(../img/hotelentrance-min.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative; }
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px; }
+
+.logo {
+  height: 52px;
+  padding-right: 25px;
+  transform: translate(0px, 1px); }
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  height: 140px; }
+
+@keyframes opacityInput {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.heading-primary {
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 10% 20px 10%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backface-visibility: hidden;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  animation: opacityInput 2s ease-out; }
+
+.heading-primary-main {
+  white-space: normal;
+  display: block;
+  text-shadow: 0px 0px 30px black;
+  animation: moveToRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+@media only screen and (min-width: 768px) {
+  .heading-primary-main {
+    font-size: 70px;
+    line-height: 80px;
+    letter-spacing: 20px;
+    font-weight: 400; }
+  .heading-primary-sub {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .heading-primary-main {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 13px;
+    font-weight: 800; }
+  .heading-primary-sub {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 5px;
+    padding-top: 10px; } }
+
+.heading-primary-sub {
+  display: block;
+  font-weight: 400;
+  text-shadow: 0px 0px 30px black;
+  animation: moveToLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0px); } }
+
+@keyframes moveToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  50% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0px); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translate(0px); } }
+
+.arrow span {
+  position: absolute;
+  top: 45vh;
+  width: 30px;
+  height: 30px;
+  margin-left: -12px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: jump 2s infinite;
+  animation: jump 2s infinite; }
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0); } }
+
+@keyframes jump {
+  0% {
+    transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    transform: rotate(-45deg) translate(0, 0); } }
