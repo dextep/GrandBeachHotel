@@ -1,8 +1,5 @@
 # Hotel Page
 
+[Live preview](https://dextep.github.io/OrientalHotel), hosted by [GitHub Pages](https://pages.github.com/). __*Please note due of hosting limits the first load can take a while.*__
+
 Learning project developed to practice frontend skills.
-
-Link to side: https://dextep.github.io/OrientalHotel
-
-To do:
-fix text-box size
