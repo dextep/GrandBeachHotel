@@ -1,3 +1,53 @@
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  50% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0px); } }
+
+@keyframes moveToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  50% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0px); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translate(0px); } }
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0); } }
+
+@keyframes jump {
+  0% {
+    transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    transform: rotate(-45deg) translate(0, 0); } }
+
+@keyframes opacityInput {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -38,12 +88,6 @@ body {
   width: 100%;
   text-align: center;
   height: 140px; }
-
-@keyframes opacityInput {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 
 .heading-primary {
   color: white;
@@ -98,34 +142,6 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out; }
 
-@keyframes moveToRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px); }
-  50% {
-    transform: translateX(10px); }
-  100% {
-    opacity: 1;
-    transform: translate(0px); } }
-
-@keyframes moveToLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(100px); }
-  50% {
-    transform: translateX(-10px); }
-  100% {
-    opacity: 1;
-    transform: translate(0px); } }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(50px); }
-  100% {
-    opacity: 1;
-    transform: translate(0px); } }
-
 .arrow span {
   position: absolute;
   top: 45vh;
@@ -138,19 +154,3 @@ body {
   transform: rotate(-45deg);
   -webkit-animation: jump 2s infinite;
   animation: jump 2s infinite; }
-
-@-webkit-keyframes jump {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0); }
-  20% {
-    -webkit-transform: rotate(-45deg) translate(-10px, 10px); }
-  40% {
-    -webkit-transform: rotate(-45deg) translate(0, 0); } }
-
-@keyframes jump {
-  0% {
-    transform: rotate(-45deg) translate(0, 0); }
-  20% {
-    transform: rotate(-45deg) translate(-10px, 10px); }
-  40% {
-    transform: rotate(-45deg) translate(0, 0); } }

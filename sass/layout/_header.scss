@@ -1,0 +1,57 @@
+.header{
+  height: 98vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(224, 108, 7, 0.2),
+      rgba(236, 212, 0, 0.2)),
+  url(../../img/hotelentrance-min.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.logo-box{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo{
+  height: 52px;
+  padding-right: 25px;
+  transform: translate(0px, 1px);
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  height: 140px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-weight: 400;
+  text-shadow: 0px 0px 30px rgb(0, 0, 0);
+  animation: moveToLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+
+.arrow span{
+  position: absolute;
+  top: 45vh;
+  width: 30px;
+  height: 30px;
+  margin-left: -12px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: jump 2s infinite;
+  animation: jump 2s infinite;
+}
