@@ -54,40 +54,15 @@
   box-sizing: border-box; }
 
 body {
+  padding: 10px;
+  background-color: #fff; }
+
+body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #777;
-  padding: 10px;
-  background-color: #fff;
-  overflow: hidden; }
-
-.header {
-  height: 98vh;
-  background-image: linear-gradient(to right bottom, rgba(224, 108, 7, 0.2), rgba(236, 212, 0, 0.2)), url(../img/hotelentrance-min.jpg);
-  background-size: cover;
-  background-position: bottom;
-  position: relative; }
-
-.logo-box {
-  position: absolute;
-  top: 40px;
-  left: 40px; }
-
-.logo {
-  height: 52px;
-  padding-right: 25px;
-  transform: translate(0px, 1px); }
-
-.text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  height: 140px; }
+  color: #777; }
 
 .heading-primary {
   color: white;
@@ -111,6 +86,81 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out; }
 
+.header {
+  height: 98vh;
+  background-image: linear-gradient(to right bottom, rgba(224, 108, 7, 0.2), rgba(236, 212, 0, 0.2)), url(../../img/hotelentrance-min.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: relative; }
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px; }
+
+.logo {
+  height: 52px;
+  padding-right: 25px;
+  transform: translate(0px, 1px); }
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  height: 140px; }
+
+.heading-primary-sub {
+  display: block;
+  font-weight: 400;
+  text-shadow: 0px 0px 30px black;
+  animation: moveToLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
+
+.arrow span {
+  position: absolute;
+  top: 45vh;
+  width: 30px;
+  height: 30px;
+  margin-left: -12px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: jump 2s infinite;
+  animation: jump 2s infinite; }
+
+.row {
+  max-width: 110rem;
+  background-color: #888888;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 9rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: orchid;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 7rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 7rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 7rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 7rem) / 3) + 7rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 7rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 7rem) / 4) + 7rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 7rem) / 4) + 2 * 7rem); }
+
 @media only screen and (min-width: 768px) {
   .heading-primary-main {
     font-size: 70px;
@@ -133,24 +183,3 @@ body {
     line-height: 20px;
     letter-spacing: 5px;
     padding-top: 10px; } }
-
-.heading-primary-sub {
-  display: block;
-  font-weight: 400;
-  text-shadow: 0px 0px 30px black;
-  animation: moveToLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
-
-.arrow span {
-  position: absolute;
-  top: 45vh;
-  width: 30px;
-  height: 30px;
-  margin-left: -12px;
-  border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: jump 2s infinite;
-  animation: jump 2s infinite; }
