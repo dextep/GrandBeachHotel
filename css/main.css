@@ -189,12 +189,10 @@ body {
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
   color: #fff;
-  text-transform: uppercase;
   display: inline-block;
   text-decoration: none;
   border-radius: 3px;
-  padding: 7px 15px;
-  letter-spacing: 2px;
+  padding: 6px 13px;
   font-weight: 400;
   background-image: linear-gradient(to right, #ecd400, #E06C07);
   position: relative;
@@ -242,4 +240,31 @@ body {
   .heading-primary--sub {
     font-size: 1.3rem;
     line-height: 1.25rem;
-    letter-spacing: 0.7rem; } }
+    letter-spacing: 0.7rem; }
+  .row .col-1-of-2 {
+    width: 100%; } }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.3);
+    border-radius: 1px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    width: 80%; }
+    .composition__photo--p1 {
+      left: 1rem;
+      top: 0; }
+    .composition__photo--p2 {
+      left: -1rem;
+      top: 18rem; }
+    .composition__photo:hover {
+      border: 3px solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to right, #ecd400, #E06C07);
+      transform: translateY(-1rem) scale(1.1);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    opacity: 80%;
+    transform: scale(0.85); }

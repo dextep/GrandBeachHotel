@@ -3,12 +3,10 @@
   &:visited {
     font-size: $default-font-size;
     color: $color-white;
-    text-transform: uppercase;
     display: inline-block;
     text-decoration: none;
     border-radius: 3px;
-    padding: 7px 15px;
-    letter-spacing: 2px;
+    padding: 6px 13px;
     font-weight: 400;
     background-image: linear-gradient(to right, $color-yellow, $color-brown-light);
     position: relative;

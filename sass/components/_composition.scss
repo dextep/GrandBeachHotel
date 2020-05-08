@@ -1,0 +1,36 @@
+.composition {
+  position: relative;
+
+  &__photo {
+    box-shadow: 0 .5rem 3rem rgba($color-black, .3);
+    border-radius: 1px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    width: 80%;
+
+    &--p1 {
+      left: 1rem;
+      top: 0;
+    }
+
+    &--p2 {
+      left: -1rem;
+      top: 18rem;
+    }
+
+    &:hover {
+      border: 3px solid;
+      border-image-slice: 1;
+      border-image-source: linear-gradient(to right, $color-yellow, $color-brown-light);
+      transform: translateY(-1rem) scale(1.1);
+      z-index: 20;
+    }
+
+  }
+
+  &:hover &__photo:not(:hover) {
+    opacity: 80%;
+    transform: scale(.85);
+  }
+}
