@@ -1,0 +1,41 @@
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-white;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 7px 15px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    background-image: linear-gradient(to right, $color-yellow, $color-brown-light);
+    position: relative;
+    z-index: 100;
+  }
+
+  &:before {
+    border-radius: inherit;
+    background-image: linear-gradient(to left, $color-yellow, $color-brown-light);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: all .6s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
