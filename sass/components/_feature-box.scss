@@ -1,22 +1,56 @@
 .feature-box {
-  background-color: rgba($color-white, .8);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-  transition: transform .3s;
+  cursor: pointer;
+  position: relative;
 
-  &__icon {
-    font-size: 6rem;
-    margin-bottom: .5rem;
-    display: inline-block;
-    background-image: linear-gradient(to right, $color-yellow, $color-brown-light);
-    -webkit-background-clip: text;
-    color: transparent;
+  &__title {
+    transform: translateY(-3px);
+    border-radius: 0 0 3px 3px;
+    padding: 2rem;
+    background-color: #fff;
+  }
+
+  &__content {
+    padding: 2rem;
+    height: 18.6rem;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    border-radius: 0 0 3px 3px ;
+  }
+
+  &__photo {
+    border-radius: 2px;
+    transition: all .2s;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
   }
 
   &:hover {
-    transform: translateY(-1.5rem) scale(1.03);
+    .feature-box {
+
+      &__title {
+        border-radius: 3px 3px 0 0;
+        transform: matrix(1, 0, 0, 1, 0, -185);
+        transition: transform ease-in .2s;
+      }
+
+      &__content {
+        transform: matrix(1, 0, 0, 1, 0, -185);
+        opacity: 1;
+        transition: opacity .2s, transform linear .2s;
+      }
+    }
+
   }
+
 }

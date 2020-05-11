@@ -192,7 +192,10 @@ body {
     width: calc(3 * ((100% - 3 * 7rem) / 4) + 2 * 7rem); }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
   color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -275,19 +278,39 @@ body {
     transform: scale(0.85); }
 
 .feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
-  .feature-box__icon {
-    font-size: 6rem;
-    margin-bottom: .5rem;
-    display: inline-block;
-    background-image: linear-gradient(to right, #ecd400, #E06C07);
-    -webkit-background-clip: text;
-    color: transparent; }
-  .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03); }
+  cursor: pointer;
+  position: relative; }
+  .feature-box__title {
+    transform: translateY(-3px);
+    border-radius: 0 0 3px 3px;
+    padding: 2rem;
+    background-color: #fff; }
+  .feature-box__content {
+    padding: 2rem;
+    height: 18.6rem;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    border-radius: 0 0 3px 3px; }
+  .feature-box__photo {
+    border-radius: 2px;
+    transition: all .2s;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+  .feature-box:hover .feature-box__title {
+    border-radius: 3px 3px 0 0;
+    transform: matrix(1, 0, 0, 1, 0, -185);
+    transition: transform ease-in .2s; }
+  .feature-box:hover .feature-box__content {
+    transform: matrix(1, 0, 0, 1, 0, -185);
+    opacity: 1;
+    transition: opacity .2s, transform linear .2s; }
