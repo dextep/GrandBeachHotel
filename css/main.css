@@ -70,7 +70,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #777;
   font-size: 16px;
@@ -95,16 +95,19 @@ body {
     animation-timing-function: ease-out; }
 
 .heading-secondary {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #ecd400, #E06C07);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
+  letter-spacing: .5rem;
   transition: all .2s;
   text-shadow: 0 0 3rem rgba(0, 0, 0, 0.2); }
+  .heading-secondary--white {
+    background-color: #fff; }
+  .heading-secondary--gradient {
+    background-image: linear-gradient(to right, #ecd400, #E06C07); }
   .heading-secondary:hover {
     transform: translateX(1rem) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -139,14 +142,13 @@ body {
   padding: 15rem 0; }
 
 .section-features {
-  padding: 20rem 0;
+  padding: 15rem 0;
   background-image: linear-gradient(to right bottom, rgba(236, 212, 0, 0.8), rgba(224, 108, 7, 0.8)), url(../img/hotelentrance-min.jpg);
   background-size: cover; }
 
 .section-rooms {
   background-color: #f7f7f7;
-  padding: 15rem 0;
-  margin-top: -10rem; }
+  padding: 15rem 0; }
 
 .header {
   height: 98vh;
@@ -261,15 +263,30 @@ body {
 
 .card {
   perspective: 200rem;
-  -moz-perspective: 200rem; }
+  -moz-perspective: 200rem;
+  position: relative;
+  height: 40rem; }
   .card__side {
-    background-color: red;
     color: white;
     font-size: 2rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
     height: 40rem;
-    transition: all .6s; }
-  .card:hover .card__side {
+    border-radius: 3px; }
+    .card__side--front {
+      background-image: linear-gradient(to top left, #ecd400, #E06C07); }
+    .card__side--back {
+      background-color: blue;
+      transform: rotateY(180deg);
+      background-image: linear-gradient(to bottom right, #ecd400, #E06C07); }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 .composition {
   position: relative; }
@@ -304,13 +321,14 @@ body {
   cursor: pointer;
   position: relative; }
   .feature-box__title {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     border-radius: 0 0 3px 3px;
-    padding: 2rem;
-    background-color: #fff; }
+    padding: 1.5rem;
+    background-color: #fff;
+    height: 8rem; }
   .feature-box__content {
     padding: 2rem;
-    height: 18.6rem;
+    height: 28.6rem;
     transform: matrix(1, 0, 0, 1, 0, 0);
     background-color: #fff;
     position: absolute;
@@ -318,7 +336,8 @@ body {
     opacity: 0;
     margin-right: 2.5rem;
     margin-left: 2.5rem;
-    border-radius: 0 0 3px 3px; }
+    border-radius: 0 0 3px 3px;
+    pointer-events: none; }
   .feature-box__photo {
     border-radius: 2px;
     transition: all .2s;
@@ -326,10 +345,11 @@ body {
     position: relative;
     overflow: hidden; }
   .feature-box:hover .feature-box__title {
-    border-radius: 3px 3px 0 0;
-    transform: matrix(1, 0, 0, 1, 0, -185);
-    transition: transform ease-in .3s; }
+    opacity: 0;
+    transition: opacity .3s; }
   .feature-box:hover .feature-box__content {
-    transform: matrix(1, 0, 0, 1, 0, -185);
+    border-radius: 3px 3px 3px 3px;
+    transform: matrix(1, 0, 0, 1, 0, -286);
     opacity: 1;
-    transition: opacity .2s, transform linear .3s; }
+    transition: opacity .2s, transform ease .2s;
+    pointer-events: all; }

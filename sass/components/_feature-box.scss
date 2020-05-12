@@ -7,15 +7,16 @@
   position: relative;
 
   &__title {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     border-radius: 0 0 3px 3px;
-    padding: 2rem;
-    background-color: #fff;
+    padding: 1.5rem;
+    background-color: $color-white;
+    height: 8rem;
   }
 
   &__content {
     padding: 2rem;
-    height: 18.6rem;
+    height: 28.6rem;
     transform: matrix(1, 0, 0, 1, 0, 0);
     background-color: #fff;
     position: absolute;
@@ -24,6 +25,7 @@
     margin-right: 2.5rem;
     margin-left: 2.5rem;
     border-radius: 0 0 3px 3px ;
+    pointer-events: none;
   }
 
   &__photo {
@@ -38,15 +40,16 @@
   &:hover {
     .feature-box {
       &__title {
-        border-radius: 3px 3px 0 0;
-        transform: matrix(1, 0, 0, 1, 0, -185);
-        transition: transform ease-in .3s;
+        opacity: 0;
+        transition: opacity .3s;
       }
 
       &__content {
-        transform: matrix(1, 0, 0, 1, 0, -185);
+        border-radius: 3px 3px 3px 3px;
+        transform: matrix(1, 0, 0, 1, 0, -286);
         opacity: 1;
-        transition: opacity .2s, transform linear .3s;
+        transition: opacity .2s, transform ease .2s;
+        pointer-events: all;
       }
     }
   }
