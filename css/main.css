@@ -119,6 +119,12 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.btn-text {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: .1rem; }
+
 .u-center-text {
   text-align: center; }
 
@@ -136,6 +142,11 @@ body {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(236, 212, 0, 0.8), rgba(224, 108, 7, 0.8)), url(../img/hotelentrance-min.jpg);
   background-size: cover; }
+
+.section-rooms {
+  background-color: #f7f7f7;
+  padding: 15rem 0;
+  margin-top: -10rem; }
 
 .header {
   height: 98vh;
@@ -192,10 +203,6 @@ body {
     width: calc(3 * ((100% - 3 * 7rem) / 4) + 2 * 7rem); }
 
 .btn-text:link, .btn-text:visited {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  letter-spacing: .1rem;
   color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -251,6 +258,18 @@ body {
     letter-spacing: 0.7rem; }
   .row .col-1-of-2 {
     width: 100%; } }
+
+.card {
+  perspective: 200rem;
+  -moz-perspective: 200rem; }
+  .card__side {
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    height: 40rem;
+    transition: all .6s; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
 
 .composition {
   position: relative; }
@@ -309,8 +328,8 @@ body {
   .feature-box:hover .feature-box__title {
     border-radius: 3px 3px 0 0;
     transform: matrix(1, 0, 0, 1, 0, -185);
-    transition: transform ease-in .2s; }
+    transition: transform ease-in .3s; }
   .feature-box:hover .feature-box__content {
     transform: matrix(1, 0, 0, 1, 0, -185);
     opacity: 1;
-    transition: opacity .2s, transform linear .2s; }
+    transition: opacity .2s, transform linear .3s; }

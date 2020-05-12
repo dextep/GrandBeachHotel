@@ -37,20 +37,19 @@
 
   &:hover {
     .feature-box {
-
       &__title {
         border-radius: 3px 3px 0 0;
         transform: matrix(1, 0, 0, 1, 0, -185);
-        transition: transform ease-in .2s;
+        transition: transform ease-in .3s;
       }
 
       &__content {
         transform: matrix(1, 0, 0, 1, 0, -185);
         opacity: 1;
-        transition: opacity .2s, transform linear .2s;
+        transition: opacity .2s, transform linear .3s;
       }
     }
-
   }
 
 }
+
