@@ -3,6 +3,7 @@
   -moz-perspective: 200rem;
   position: relative;
   height: 40rem;
+  padding: 2.5rem;
 
   &__side {
     color: white;
@@ -23,16 +24,83 @@
     &--back {
       background-color: blue;
       transform: rotateY(180deg);
-      background-image: linear-gradient(to bottom right, $color-yellow, $color-brown-light);
+      background-image: linear-gradient(to top right, $color-yellow, $color-brown-light);
+    }
+
+  }
+
+  &__picture {
+    height: 100%;
+    background-blend-mode: screen;
+    background-size: cover;
+    border-radius: 3px 3px 0 0;
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-yellow, 0.2),
+          rgba($color-brown-light, 0.2)),
+      url(../img/room1.jpg);
+      background-position: left;
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-yellow, 0.2),
+          rgba($color-brown-light, 0.2)),
+      url(../img/room1.jpg);
+      background-position: center;
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-yellow, 0.2),
+          rgba($color-brown-light, 0.2)),
+      url(../img/room1.jpg);
+      background-position: right;
+    }
+
+
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 3rem $color-black
+  }
+
+  &__details {
+    text-align: inherit;
+    font-size: 1.4rem;
+    padding: 2rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-white;
+        }
+      }
 
     }
   }
 
-  &:hover &__side--front {
-    transform: rotateY(180deg);
-  }
 
-  &:hover &__side--back {
-    transform: rotateY(0);
-  }
 }
