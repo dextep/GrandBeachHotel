@@ -2,13 +2,14 @@
   width: 85%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, .1);
-  background-color: $color-white;
   border-radius: 6rem;
   font-size: $default-font-size;
   padding: 3rem;
   padding-left: 9rem;
+  background-color: rgba($color-white, .8);
 
   &__shape {
+    position: relative;
     width: 10rem;
     height: 10rem;
     float: left;
