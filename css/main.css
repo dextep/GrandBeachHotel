@@ -163,6 +163,19 @@ body {
   position: relative;
   padding: 15rem 0; }
 
+.section-contact {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, rgba(236, 212, 0, 0.8), rgba(224, 108, 7, 0.8)); }
+
+.contact {
+  background-image: linear-gradient(to right bottom, rgba(236, 212, 0, 0.2), rgba(224, 108, 7, 0.2)), url(../img/hotelentrance-min.jpg);
+  background-size: 100%;
+  height: 70rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  .contact__form {
+    width: 70%;
+    padding: 6rem; }
+
 .header {
   height: 98vh;
   background-image: linear-gradient(to right bottom, rgba(236, 212, 0, 0.2), rgba(224, 108, 7, 0.2)), url(../img/hotelentrance-min.jpg);
@@ -216,6 +229,54 @@ body {
     width: calc(2 * ((100% - 3 * 7rem) / 4) + 7rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 7rem) / 4) + 2 * 7rem); }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__textarea {
+  resize: none;
+  width: 90%;
+  padding: 1.5rem 2rem;
+  font-weight: 300;
+  display: block;
+  transition: all .3s;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rbga(#ffffff, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all .3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #E06C07; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #E06C07; }
+  .form__input::-webkit-input-placeholder {
+    color: #E06C07; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .bg-video {
   position: absolute;
