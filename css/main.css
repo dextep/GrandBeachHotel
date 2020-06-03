@@ -152,6 +152,7 @@ body {
 .section-features {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, rgba(236, 212, 0, 0.8), rgba(224, 108, 7, 0.8)), url(../img/hotelentrance-min.jpg);
+  background-attachment: fixed;
   background-size: cover; }
 
 .section-rooms {
@@ -179,6 +180,7 @@ body {
 .header {
   height: 98vh;
   background-image: linear-gradient(to right bottom, rgba(236, 212, 0, 0.2), rgba(224, 108, 7, 0.2)), url(../img/hotelentrance-min.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
   position: relative; }
