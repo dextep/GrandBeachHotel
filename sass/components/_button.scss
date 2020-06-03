@@ -83,3 +83,55 @@
     }
   }
 }
+
+.btn-send {
+  position: absolute;
+  box-sizing: border-box;
+  height: 5.5rem;
+  width: 100%;
+  cursor: pointer;
+  background-image: linear-gradient(to right, $color-yellow, $color-brown-light);
+  border: none;
+  text-align: center;
+  line-height: 1;
+  border-radius: 5.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px;
+  z-index: 100;
+
+  &:before {
+    border-radius: inherit;
+    background-image: linear-gradient(to left, $color-yellow, $color-brown-light);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0ms;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    transform: translateY(-2px);
+  }
+
+}
