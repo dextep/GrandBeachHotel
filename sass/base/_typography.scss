@@ -69,6 +69,12 @@ body {
   }
 }
 
+.heading-quaternary {
+  font-size: $bigger-font-size;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
 .btn-text, .card-btn {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;

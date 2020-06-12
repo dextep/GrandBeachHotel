@@ -4,9 +4,10 @@
     color: $color-white;
     display: inline-block;
     text-decoration: none;
-    border-radius: 3px;
-    padding: 6px 13px;
+    border-radius: 15px;
+    padding: 10px 20px;
     font-weight: 400;
+    font-size: 1.4rem;
     background-image: linear-gradient(to right, $color-yellow, $color-brown-light);
     position: relative;
     z-index: 100;
@@ -42,15 +43,16 @@
   color: $color-white;
   display: inline-block;
   text-decoration: none;
-  border-radius: 3px;
-  padding: 7px;
+  border-radius: 15px;
+  padding: 10px;
   font-weight: 400;
+  font-size: 1.4rem;
   background-image: linear-gradient(to right, $color-yellow, $color-brown-light);
   z-index: 100;
   cursor: pointer;
 
-  width: 15rem;
-  height: 3rem;
+  width: 17rem;
+  //height: 3rem;
 
   text-align: center;
   left: 50%;
