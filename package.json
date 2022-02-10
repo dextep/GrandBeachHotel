@@ -29,6 +29,6 @@
   },
   "homepage": "https://github.com/dextep/OrientalHotel#readme",
   "devDependencies": {
-    "node-sass": "^4.14.0"
+    "node-sass": "^7.0.0"
   }
 }
